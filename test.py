@@ -17,8 +17,8 @@ def parse_site(url, fields):
     return result
 
 
-def arcade():
-    with open("arcade_link.json", "r", encoding="utf-8") as f:
+def minecraft():
+    with open("websize.json", "r", encoding="utf-8") as f:
         data = json.load(f)
     for key, value in data.items():
         for item in value:
@@ -34,8 +34,7 @@ def arcade():
             else:
                 result = parse_site(url, fields)
                 print(result[0])
-        break
 
 
 if __name__ == "__main__":
-    arcade()
+    minecraft()

@@ -34,7 +34,9 @@ def arcade():
             else:
                 result = parse_site(url, fields)
                 print(result[0])
-        break
+
+
+result = parse_site(url, fields)
 
 
 if __name__ == "__main__":
